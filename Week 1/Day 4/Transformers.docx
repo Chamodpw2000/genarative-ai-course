@@ -1,0 +1,103 @@
+“Attention Is All You Need” is a landmark research paper published in 2017 by Vaswani et al. that introduced the Transformer architecture — the foundation of modern models like GPT, BERT, and T5.
+
+The paper proposed:
+
+Remove recurrence and convolution entirely — use only attention
+
+Hence the title.
+
+Core idea: Self-Attention
+
+Instead of processing words sequentially, the model:
+
+Looks at all words at once
+
+Learns how much each word should attend to every other word
+
+Example:
+
+“The animal didn’t cross the street because it was tired.”
+
+Self-attention helps the model learn that “it” → “animal”, not “street”.
+
+A Transformer is a neural network architecture designed to understand and generate sequences (like text, code, or time-series) using attention, instead of recurrence (RNNs) or convolutions (CNNs).
+
+A transformer learns relationships between all elements in a sequence at once using self-attention.
+
+In Transformers, attention means:
+
+Learning how much importance (“focus”) to give to other parts of the input when processing one element.
+
+It’s not human attention — it’s a mathematical weighting mechanism.
+
+A parameter of a model is: A value inside the model that is learned from data during training and used to make predictions.
+
+Training-time scaling and inference-time scaling describe where you spend compute and what you gain from it in a machine learning model—especially important for large models like Transformers and LLMs.
+
+I’ll explain this cleanly, from intuition → technical.
+
+1️⃣ Training-time scaling
+What it means
+
+Improving model performance by spending more compute during training.
+
+You scale:
+
+Number of parameters
+
+Training data
+
+Training steps / epochs
+
+Model depth & width
+
+Once training is done, the model is fixed.
+
+What it means
+
+Improving model performance by spending more compute at inference (prediction) time.
+
+You scale:
+
+Number of reasoning steps
+
+Chain-of-thought
+
+Self-consistency (multiple samples)
+
+Tool use, planning, search
+
+The model weights do not change.
+
+Example
+
+Ask the model to “think step by step”
+
+Generate multiple answers and vote
+
+Use tree search or reflection loops
+
+Result:
+
+Better reasoning
+
+Fewer logical errors
+
+Better complex problem solving
+
+A token is:
+
+A basic unit of text that a model reads, processes, and generates.
+
+Models don’t see raw text — they see tokens.
+
+A token can contain more than one word, but usually it doesn’t.
+
+
+context window - Max number of tokens that  a model can consider when genarating the next token.
+
+Includes the original input prompt + subsequesnt conversation + last input prompt and alsmost all generated tokens.
+
+ 
+
+ 
