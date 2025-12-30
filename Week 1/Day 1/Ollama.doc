@@ -1,0 +1,5 @@
+Ollama is an open-source tool that allows you to run large language models (LLMs) locally on your computer. 
+It provides a simple interface to download, manage, and interact with various AI models without needing cloud access. 
+Ollama is popular for its ease of use, privacy (since data stays on your device), and support for multiple models, 
+making it useful for developers and AI enthusiasts who want to experiment with LLMs on their own hardware.
+

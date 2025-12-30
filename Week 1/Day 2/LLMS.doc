@@ -1,0 +1,24 @@
+LLMs come in 3 flavors:
+
+1. Base Models
+   - These are the foundational models trained on vast amounts of text data.
+   - Examples include GPT-3, BERT, and RoBERTa.
+   - They can be fine-tuned for specific tasks but are not specialized out of the box.
+2. Chat/Instruct:
+    - These models are fine-tuned versions of base models designed to follow instructions or engage in conversational tasks.
+    - Examples include InstructGPT and ChatGPT.
+    - They are optimized for generating human-like responses and understanding user prompts.
+    - Better for interactive use cases and creative content generation.
+
+3. Reasoning/Thinking:
+    - These models are further specialized to perform complex reasoning tasks.
+    - Examples include models like GPT-4 with enhanced reasoning capabilities.
+    - They excel in tasks that require logical thinking, problem-solving, and multi-step reasoning.
+    - Ideal for applications in education, research, and decision-making support.
+
+
+✨ Other that these models we have Hybrid Models that combine features from Chat/Instruct and Reasoning/Thinking categories to cater to specific use cases.
+✨ Budget forcing is decide between Chat/Instruct and Reasoning/Thinking models based on the complexity of tasks and required performance. It is essential
+to evaluate the specific needs of the application to choose the right model type.
+✨ In summary, the choice between Base Models, Chat/Instruct, and Reasoning/Thinking models depends on the specific requirements of the application, including
+the complexity of tasks, desired interaction style, and performance needs.
